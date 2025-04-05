@@ -1,1 +1,1 @@
-# rugby-analysis
+# rugby-analysis-yolov8
