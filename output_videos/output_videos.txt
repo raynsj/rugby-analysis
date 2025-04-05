@@ -1,1 +1,3 @@
 Your 'output_video.mp4' will be placed in 'output_videos' folder.
+
+A sample trained model has already been provided.
