@@ -1,1 +1,3 @@
 Place 'input_video.mp4'in 'input_videos' folder.
+
+Recommended to keep 'input_video' under 10 seconds for testing.
