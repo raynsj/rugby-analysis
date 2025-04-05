@@ -1,6 +1,6 @@
 # rugby-analysis-yolov8
 
-Rugby Player Tracking System
+Rugby Player Tracking System (v1)
 
 Advanced player tracking system for rugby videos with team assignment, speed tracking, and distance measurement.
 
@@ -41,11 +41,13 @@ main.py
 rugby-tracking/
 ├── input_videos/      # Place input videos here
 ├── output_videos/     # Results are saved here
-├── modelsv0.0.4/      # Pre-trained YOLO models
+├── models/            # Pre-trained YOLO models
 ├── trackers/          # Tracking modules
 ├── utils/             # Utility functions
-├── main.py            # Main script
+├── main.py/           # Main.py file
+├── stubs/             # Pickle files stored here
 └── README.md          # This file
+
 ```
 
 # How It Works
