@@ -18,7 +18,7 @@ Features
 
 ```python
 # Clone the repository
-git clone https://github.com/yourusername/rugby-analysis-yolov8.git
+git clone https://github.com/raynsj/rugby-analysis-yolov8.git
 cd rugby-analysis-yolov8
 
 # Install dependencies
