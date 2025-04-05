@@ -1,0 +1,1 @@
+Place your YOLO object detection model named 'model_name.pt' in 'models' folder.
