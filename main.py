@@ -11,7 +11,7 @@ def main():
     video_frames = read_video('input_videos/input_video.mp4')
 
     # Initialize tracker
-    tracker = Tracker('modelsv0.0.4/best(4).pt')
+    tracker = Tracker('models/model_name.pt')
 
     # Get object tracks
     tracks = tracker.get_object_tracks(video_frames, read_from_stub=True, stub_path='stubs/track_stub.pkl')
