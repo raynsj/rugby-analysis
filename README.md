@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 Place your rugby video in the input_videos/ folder
 
-# Track a Specific Player
+Track a Specific Player
 
 To focus on a specific player and save their stats to CSV:
 
@@ -48,31 +48,48 @@ Run the analysis:
 main.py
 ```
 
+# How it works
+
+This system uses computer vision and machine learning to track rugby players:
+
+    Object Detection: Uses YOLO to detect players in each video frame
+
+    Player Tracking: Maintains player identities across frames
+
+    Team Assignment: Uses color clustering to assign players to teams
+
+    Motion Analysis: Calculates player movement between frames
+
+    Distance Calculation: Measures total distance covered by each player
+
+    Speed Calculation: Computes player speeds based on frame-to-frame movement
+
+
 # Project Structure
 
 ```txt
-rugby-tracking/
-├── input_videos/      # Place input videos here
-├── output_videos/     # Results are saved here
-├── models/            # Pre-trained YOLO models
-├── trackers/          # Tracking modules
-├── utils/             # Utility functions
-├── main.py/           # Main.py file
-├── stubs/             # Pickle files stored here
-└── README.md          # This file
+rugby-analysis-yolov8/
+├── input_videos/       # Place input videos here
+├── output_videos/      # Processed videos are saved here
+├── trackers/           # Core tracking modules
+│   ├── tracker.py      # Main tracking functionality
+│   ├── team_assignment.py  # Team identification
+│   ├── optical_flow.py     # Motion analysis
+│   ├── speed_distance.py   # Performance metrics
+│   └── perspective_transform.py  # Real-world measurements
+├── utils/              # Utility functions
+├── main.py             # Main application
+└── requirements.txt    # Dependencies
 
 ```
 
-# How It Works
+Performance Notes
 
-The system uses computer vision and machine learning to:
+Video analysis is computationally intensive and optimization has not been complete yet. For a 7-second video, expect processing to take several minutes depending on your hardware.
 
-    1. Detect players using YOLO object detection
+Disclaimers
 
-    2. Track player movement across frames
+This is by no means a final product. This is currently a passion project initiated and done completely by myself and I will continue to hone my skills and push updates constantly.
 
-    3. Cluster jersey colors to assign team membership
+Stay tuned for more!
 
-    4. Calculate motion vectors using optical flow
-
-    5. Transform pixel measurements to real-world coordinates
