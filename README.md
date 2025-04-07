@@ -1,6 +1,6 @@
 # rugby-analysis-yolov8
 
-Rugby Player Tracking System (v1)
+Rugby Player Tracking System (v1.1)
 
 Advanced player tracking system for rugby videos with team assignment, speed tracking, and distance measurement.
 
@@ -16,6 +16,9 @@ Features
 
     📊 Monitor total distance covered by each player
 
+    📏 Player stats will be saved in a .csv file
+    
+
 ```python
 # Clone the repository
 git clone https://github.com/raynsj/rugby-analysis-yolov8.git
@@ -25,9 +28,19 @@ cd rugby-analysis-yolov8
 pip install -r requirements.txt
 ```
 
-Usage
+# Usage
 
 Place your rugby video in the input_videos/ folder
+
+# Track a Specific Player
+
+To focus on a specific player and save their stats to CSV:
+
+```python
+# In main.py, modify the player ID value:
+player_id = 4  # Change this to your target player's ID
+
+```
 
 Run the analysis:
 
