@@ -45,7 +45,7 @@ player_id = 4  # Change this to your target player's ID
 # Run the analysis:
 
 ```python
-main.py
+python main.py
 ```
 
 # How it works
