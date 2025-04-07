@@ -4,7 +4,7 @@ Rugby Player Tracking System (v1.1)
 
 Advanced player tracking system for rugby videos with team assignment, speed tracking, and distance measurement.
 
-Features
+# Features
 
     🏃‍♂️ Track individual players with unique IDs
 
@@ -42,7 +42,7 @@ player_id = 4  # Change this to your target player's ID
 
 ```
 
-Run the analysis:
+# Run the analysis:
 
 ```python
 main.py
@@ -83,11 +83,11 @@ rugby-analysis-yolov8/
 
 ```
 
-Performance Notes
+# Performance Notes
 
 Video analysis is computationally intensive and optimization has not been complete yet. For a 7-second video, expect processing to take several minutes depending on your hardware.
 
-Disclaimers
+# Disclaimers
 
 This is by no means a final product. This is currently a passion project initiated and done completely by myself and I will continue to hone my skills and push updates constantly.
 
