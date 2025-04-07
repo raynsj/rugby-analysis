@@ -3,3 +3,4 @@ supervision
 opencv-python
 numpy
 scikit-learn
+pandas
