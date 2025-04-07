@@ -78,6 +78,7 @@ rugby-analysis-yolov8/
 │   ├── speed_distance.py   # Performance metrics
 │   └── perspective_transform.py  # Real-world measurements
 ├── utils/              # Utility functions
+├── stubs/              # pickle files for speed
 ├── main.py             # Main application
 └── requirements.txt    # Dependencies
 
