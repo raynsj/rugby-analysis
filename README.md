@@ -5,6 +5,7 @@ Advanced player tracking system for rugby videos with team assignment, speed tra
 <img src="images/cuhk4s.png" width="500" /> <img src="images/cuhk22s.png" width="500" />
 
 Object-detection model used was a yolov8 pre-trained model trained on a rugby league dataset using Google Colab.
+
 <img src="images/results(1).png" width="700" />
 
 
