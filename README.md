@@ -4,6 +4,8 @@ Advanced player tracking system for rugby videos with team assignment, speed tra
 
 <img src="images/cuhk4s.png" width="500" /> <img src="images/cuhk22s.png" width="500" />
 
+Object-detection model used was a yolov8 pre-trained model trained on a rugby league dataset using Google Colab.
+<img src="images/results(1).png" width="700" />
 
 
 ✨ What's New in v1.2
@@ -20,15 +22,10 @@ Player statistics and program performance metrics
 Features
 
     🏃‍♂️ Track individual players with unique IDs
-
     📏 Calculate real-world distances in meters with improved accuracy
-
     📊 Monitor total distance covered by each player
-
     📈 Performance logging to monitor model efficiency
-
     📱 Optimized specifically for Apple Silicon MacBooks (M1/M2/M3)
-
     📁 All player statistics automatically saved to CSV files
 
 Installation
@@ -58,9 +55,7 @@ python main.py
 This version is specifically optimized for:
 
     MacBook Pro/Air with Apple Silicon (M1/M2/M3)
-
     macOS Monterey or later
-
     Python 3.9+
 
 Performance benchmarks on MacBook M3 Air:
@@ -88,32 +83,20 @@ The system now generates two CSV files automatically:
 This system uses optimized computer vision and machine learning to track rugby players:
 
     Object Detection: Uses YOLO with CoreML optimizations on MacBooks for faster detection
-
-    Player Tracking: Maintains player identities across frames with improved algorithm
-
-    Motion Analysis: Calculates player movement between frames with optimized optical flow calculations
-
-    Distance Calculation: Measures total distance covered by each player in real-world units
-
+    Player Tracking: Maintains player identities across frames with improved algorithm (SuperVision)
+    Distance Calculation: Measures total distance covered by each player with optimized optical flow calculations
     Performance Tracking: Monitors model execution time and resource usage
-
 
 # Performance Improvements
 
 v1.2 introduces significant optimizations for MacBook users:
 
     Core ML integration for Apple Silicon acceleration
-    
     Frame Skipping	
-    
     Sparse Optical Flow
-    
     Resolution Scaling
-
     Reduced precision calculations where appropriate
-
     Background export of statistics to minimize processing delays
-
 
 # Disclaimers
 
