@@ -107,9 +107,6 @@ v1.2 introduces significant optimizations for MacBook users:
 
 While v1.2 brings significant performance improvements, this project remains under active development. This passion project continues to evolve with regular updates focusing on both performance and accuracy.
 
-
-# Disclaimers
-
 This is by no means a final product. This is currently a passion project initiated and done completely by myself and I will continue to hone my skills and push updates constantly.
 
 Stay tuned for more!
