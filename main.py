@@ -16,17 +16,17 @@ def main():
 
         # Read video (track I/O time)
         perf_tracker.start_section('video_io_time')
-        video_frames = read_video('input_videos/input_video_cuhk.mp4')
+        video_frames = read_video('input_videos/input_video.mp4')
         perf_tracker.end_section('video_io_time')
 
         # Initialize tracker (track model loading time)
         perf_tracker.start_section('model_loading_time')
-        tracker = Tracker('modelsv0.0.4/best(4).mlpackage/Data/com.apple.CoreML/model.mlmodel', scale_factor=0.5)
+        tracker = Tracker('models/model.mlpackage/Data/com.apple.CoreML/model.mlmodel', scale_factor=0.5)
         perf_tracker.end_section('model_loading_time')
 
         # Object tracking (track detection time)
         perf_tracker.start_section('detection_time')
-        tracks = tracker.get_object_tracks(video_frames, read_from_stub=True, stub_path='stubs/track_stub_cuhk_1.pkl')
+        tracks = tracker.get_object_tracks(video_frames, read_from_stub=True, stub_path='stubs/track_stub.pkl')
         perf_tracker.end_section('detection_time')
 
         # Process video WITH OPTIMIZED OPTICAL FLOW
