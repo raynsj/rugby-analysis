@@ -15,7 +15,7 @@ Advanced player tracking system for rugby videos with team assignment, speed tra
 
 Player statistics and program performance metrics
 
-<img src="images/player_statistics_ss.png" width="300" /> <img src="images/performance_metrics_ss.png" width="550" />
+<img src="images/player_statistics_ss.png" width="300" /> <img src="images/performance_metrics_ss.png" width="520" />
 
 Features
 
