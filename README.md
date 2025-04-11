@@ -41,6 +41,15 @@ cd rugby-analysis-yolov8
 pip install -r requirements_mac.txt
 ```
 
+# Run
+```python
+# Run conversion_script.py ONCE first
+python conversion_script.py
+
+# Run main program
+python main.py
+```
+
 # MacBook Compatibility
 
 This version is specifically optimized for:
