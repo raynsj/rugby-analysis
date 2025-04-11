@@ -1,8 +1,10 @@
-# rugby-analysis-yolov8
-
 # Rugby Player Tracking System (v1.2)
 
 Advanced player tracking system for rugby videos with team assignment, speed tracking, and comprehensive statistics - optimized for MacBook performance.
+![Uploading cuhk4s.png…]()
+
+![Uploading cuhk22s.png…]()
+
 
 ✨ What's New in v1.2
 
