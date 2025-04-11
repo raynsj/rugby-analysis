@@ -1,94 +1,120 @@
 # rugby-analysis-yolov8
 
-Rugby Player Tracking System (v1.1)
+# Rugby Player Tracking System (v1.2)
 
-Advanced player tracking system for rugby videos with team assignment, speed tracking, and distance measurement.
+Advanced player tracking system for rugby videos with team assignment, speed tracking, and comprehensive statistics - optimized for MacBook performance.
 
-# Features
+✨ What's New in v1.2
+
+    🚀 Major optimization improvements - Up to 3x faster processing on MacBooks
+
+    📊 Comprehensive player statistics - Track all players simultaneously
+
+    ⏱️ Performance metrics - Model execution speed logged for analysis
+
+    💾 Enhanced data export - Detailed CSV exports for all tracked metrics
+
+Features
 
     🏃‍♂️ Track individual players with unique IDs
 
-    👕 Automatically assign players to teams based on jersey colors
-
-    📏 Calculate real-world distances in meters
-
-    🚀 Measure player speed in m/s
+    📏 Calculate real-world distances in meters with improved accuracy
 
     📊 Monitor total distance covered by each player
 
-    📏 Player stats will be saved in a .csv file
-    
+    📈 Performance logging to monitor model efficiency
 
-```python
+    📱 Optimized specifically for Apple Silicon MacBooks (M1/M2/M3)
+
+    📁 All player statistics automatically saved to CSV files
+
+Installation
+```bash
 # Clone the repository
 git clone https://github.com/raynsj/rugby-analysis-yolov8.git
 cd rugby-analysis-yolov8
-
-# Install dependencies
-pip install -r requirements.txt
 ```
+
+# Install dependencies for MacOS
+
+```bash
+pip install -r requirements_mac.txt
+```
+
+# Run
+```python
+# Run conversion_script.py ONCE first
+python conversion_script.py
+
+# Run main program
+python main.py
+```
+
+# MacBook Compatibility
+
+This version is specifically optimized for:
+
+    MacBook Pro/Air with Apple Silicon (M1/M2/M3)
+
+    macOS Monterey or later
+
+    Python 3.9+
+
+Performance benchmarks on MacBook M3 Air:
+
+    7-second video: ~30 seconds processing (vs. 3+ minutes in v1.1)
 
 # Usage
 
 Place your rugby video in the input_videos/ folder
 
-Track a Specific Player
+Track All Players
 
-To focus on a specific player and save their stats to CSV:
+The new version automatically tracks all players by default and saves total distance statistics:
 
-```python
-# In main.py, modify the player ID value:
-player_id = 4  # Change this to your target player's ID
+# Output
 
-```
+The system now generates two CSV files automatically:
 
-# Run the analysis:
+    player_statistics.csv: Distance data for all players
 
-```python
-python main.py
-```
+    performance_metrics.csv: Processing speed and model performance data
 
 # How it works
 
-This system uses computer vision and machine learning to track rugby players:
+This system uses optimized computer vision and machine learning to track rugby players:
 
-    Object Detection: Uses YOLO to detect players in each video frame
+    Object Detection: Uses YOLO with CoreML optimizations on MacBooks for faster detection
 
-    Player Tracking: Maintains player identities across frames
+    Player Tracking: Maintains player identities across frames with improved algorithm
 
-    Team Assignment: Uses color clustering to assign players to teams
+    Motion Analysis: Calculates player movement between frames with optimized optical flow calculations
 
-    Motion Analysis: Calculates player movement between frames
+    Distance Calculation: Measures total distance covered by each player in real-world units
 
-    Distance Calculation: Measures total distance covered by each player
-
-    Speed Calculation: Computes player speeds based on frame-to-frame movement
+    Performance Tracking: Monitors model execution time and resource usage
 
 
-# Project Structure
+# Performance Improvements
 
-```txt
-rugby-analysis-yolov8/
-├── input_videos/       # Place input videos here
-├── output_videos/      # Processed videos are saved here
-├── trackers/           # Core tracking modules
-│   ├── tracker.py      # Main tracking functionality
-│   ├── team_assignment.py  # Team identification
-│   ├── optical_flow.py     # Motion analysis
-│   ├── speed_distance.py   # Performance metrics
-│   └── perspective_transform.py  # Real-world measurements
-├── utils/              # Utility functions
-├── stubs/              # pickle files for speed
-├── main.py             # Main application
-└── requirements.txt    # Dependencies
+v1.2 introduces significant optimizations for MacBook users:
 
-```
+    Core ML integration for Apple Silicon acceleration
+    
+    Frame Skipping	
+    
+    Sparse Optical Flow
+    
+    Resolution Scaling
 
-# Performance Notes
+    Reduced precision calculations where appropriate
 
-Video analysis is computationally intensive and optimization has not been complete yet. For a 7-second video, expect processing to take several minutes depending on your hardware.
+    Background export of statistics to minimize processing delays
+
 
 # Disclaimers
+
+While v1.2 brings significant performance improvements, this project remains under active development. This passion project continues to evolve with regular updates focusing on both performance and accuracy.
 
 This is by no means a final product. This is currently a passion project initiated and done completely by myself and I will continue to hone my skills and push updates constantly.
 
