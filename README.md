@@ -13,6 +13,9 @@ Advanced player tracking system for rugby videos with team assignment, speed tra
     ⏱️ Performance metrics - Model execution speed logged for analysis
     💾 Enhanced data export - Detailed CSV exports for all tracked metrics
 
+Player statistics and program performance metrics
+<img src="images/player_statistics_ss.png" width="400" /> <img src="images/performance_metrics_ss.png" width="400" />
+
 Features
 
     🏃‍♂️ Track individual players with unique IDs
