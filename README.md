@@ -2,6 +2,7 @@
 
 Advanced player tracking system for rugby videos with team assignment, speed tracking, and comprehensive statistics - optimized for MacBook performance.
 
+<img src="images/cuhk4s.png" width="300" />
 ![Alt text](images/cuhk4s.png)
 
 ![Alt text](images/cuhk22s.png)
