@@ -9,11 +9,8 @@ Advanced player tracking system for rugby videos with team assignment, speed tra
 ✨ What's New in v1.2
 
     🚀 Major optimization improvements - Up to 3x faster processing on MacBooks
-
     📊 Comprehensive player statistics - Track all players simultaneously
-
     ⏱️ Performance metrics - Model execution speed logged for analysis
-
     💾 Enhanced data export - Detailed CSV exports for all tracked metrics
 
 Features
